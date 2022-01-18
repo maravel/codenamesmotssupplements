@@ -1,10 +1,8 @@
 
-
-
 let text = "";
-let filename = "sex_symbols.txt";
+let filename = "box_office.txt";
 
-$("#mw-content-text .colonnes ul li > a").each((index, elt)=> { text += $(elt).html() + "\n" });
+$("#mw-content-text .wikitable tr td:nth-child(2) i > a").each((index, elt)=> { text += $(elt).html() + "\n" });
 
 
 var element = document.createElement('a');
